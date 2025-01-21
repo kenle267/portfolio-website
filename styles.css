@@ -46,6 +46,12 @@ nav .left a {
 nav .right a {
     color: var(--text-color);
     margin: 0 10px;
+    transition: color 0.1s ease-in-out;
+}
+
+nav .right a:hover {
+    color: var(--link-color);
+    font-size: large;
 }
 
 nav .right a:last-child {
@@ -55,8 +61,14 @@ nav .right a:last-child {
     border-radius: 5px;
 }
 
+nav .right a:last-child:hover {
+    background-color: var(--link-color);
+    transition: background-color 0.1s ease-in-out;
+}
+
 nav .right a span{
     margin-left: 5px;
+    transition: transform 0.25s ease-in-out;
 }
 
 /* SECTION 1: Hero */
@@ -86,7 +98,7 @@ nav .right a span{
     display: inline-block;
     padding: 5px 10px;
     border: 2px solid var(--link-color);
-    border-radius: 5px;
+    border-radius: 25px;
     margin-right: 10px;;
     margin-bottom: 10px;
     transition: .1s;
@@ -100,12 +112,18 @@ nav .right a span{
 .hero-section .headshot {
     flex: 2;
     display: flex;
-    justify-content: right;;
+    justify-content: right;
 }
 
 .hero-section .headshot img {
     border-radius: 50%;
-    width: 300px;
+    width: 300px;   
+    transition: .25s ease-in-out;
+}
+
+.hero-section .headshot img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* SECTION 2: Skills */
