@@ -35,12 +35,20 @@ nav {
     height: 80px;
     background-color: var(--background-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 9999999;
 }
 
 nav .left a {
     color: var(--text-color);
     font-size: 22px;
     font-weight: 600;
+    transition: color 0.2s ease-in-out;
+}
+
+nav .left a:hover {
+    color: var(--link-color);
 }
 
 nav .right a {
